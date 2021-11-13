@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class='container alert alert-success'>
+    <h1>{{post.title}}</h1>
+    by {{post.author}}
+    <br>
+    created on {{post.datetime}}
+    
+    
+    {% if user.is_authenticated %}
+    <br>
+    <a href="{% url 'edit' post.pk %}" style="color: #a105fc; text-decoration: none !important">EDIT</a>
+    <br>
+    <a href="{% url 'delete' post.pk %}" style="color: #fc0505; text-decoration: none !important">DELETE</a>
+    <br>
+    {% endif %}
+</div>
+<br>
+<div class='container'>
+    <p class="lead">{{post.desc}}</p>
+</div>
+<br>
+<div class='container bg-dark text-light'>
+   <pre> <code>{{post.code}}<code><pre>
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>Programs:</h1>
+<ul>
+
+{% for eachpost in object_list %}
+<li class="list-group-item list-group-item-dark">
+ <a  href="{% url 'details' eachpost.pk %}" style="color: #000000; text-decoration: none !important">  {{eachpost.title}}  |  {{eachpost.author}}    </a>
+
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+{% endblock %}
