@@ -1,8 +1,75 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 
 
-<h1>Welcome to PythonBlog. This is a repository for all my python Programs.</h1>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="container-fluid" style="background-color: burlywood;">
+    <div class="row">
+        
+      <div class="col-6">
+          <div style="padding-left: 60px;">
+            <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        <h1>Welcome to PythonBlog. Your very own python assistant.</h1>
+        <p>A forum specially for python, where people can share programs, in other words-- ideas.</p>
+          </div>
+          
+      </div>
+      
+
+      <div class="col-4" >
+        <img src="{% static 'A_.png' %}" width="890" height="600">
+      </div>
+      
+    </div>
+  </div>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 13rem;">
+          <img src="{% static 'ease.png' %}" class="card-img-top"  height="185px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ease of use</h5>
+            <p class="card-text">Programs at the tip of your finger. Easy access of information and ideas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 13rem;">
+          <img src="{% static 'money.png' %}" class="card-img-top" height = "180px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Free</h5>
+            <p class="card-text">Programs ready to use and free of cost. After all, there shouldn't be a price for sharing ideas!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 14rem;">
+          <img src="{% static 'happy.png' %}" class="card-img-top" height = "185px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Made for everyone</h5>
+            <p class="card-text">From Beginners to Advanced, these programs help deepen your understanding and knowledge about coding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
 {% endblock %}
